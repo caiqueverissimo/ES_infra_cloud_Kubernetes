@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myappsql
+  labels:
+    name: myappsql
+spec:
+  containers:
+  - name: myappsql
+    image: mysql
+    ports:
+      - containerPort: 3306
